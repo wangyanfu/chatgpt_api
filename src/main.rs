@@ -1,5 +1,3 @@
-#![allow(non_snake_case)]
-
 use std::error::Error;
 use clap::{Arg, Command};
 use reqwest::header::{HeaderMap, HeaderValue};
@@ -84,8 +82,3 @@ fn main() -> std::result::Result<(), Box<dyn Error>> {
     println!("{}", message.to_string());
     Ok(())
 }
-
-
-
-
-
